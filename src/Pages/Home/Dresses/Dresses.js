@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Dress from '../Dress/Dress';
 
 const Dresses = () => {
     const [products, setProducts] = useState([]);
@@ -9,9 +10,18 @@ const Dresses = () => {
             .then(data => setProducts(data));
     }, [])
     return (
-        <div>
-            <h2>How Much products: {products.length}</h2>
+        <div className='container'>
+        <h2 className='text-primary text-center mt-5'>Dresses</h2>
+        <div className="row">
+           {
+                    products.map(product => <Dress
+                        key={product.id}
+                        product={product}
+                    />)
+                }
         </div>
+    </div>
+            
     );
 };
 
