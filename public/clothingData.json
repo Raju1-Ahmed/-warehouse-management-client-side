@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name": "H&H Women's Tiered Midi Dress",
+        "img": "https://www.thewarehouse.co.nz/dw/image/v2/BDMG_PRD/on/demandware.static/-/Sites-twl-master-catalog/default/dw0ac7d1e9/images/hi-res/93/DC/R2792448_20.jpg?sw=292&sh=292",
+        "price": 45,
+        "description": "Simple yet stylish, this long-sleeve dress works great as a casual wear. It is finished with a brushed and ribbed pattern. Team this fitted dress with a pair of contrasting sneakers or stilettos to complete your look. ",
+        "quantity": 10
+    },
+    {
+        "id": 2,
+        "name": "H&H Women's Rib Tiered Mini Dress",
+        "img": "https://www.thewarehouse.co.nz/dw/image/v2/BDMG_PRD/on/demandware.static/-/Sites-twl-master-catalog/default/dw6bcf0733/images/hi-res/0C/8B/R2799936_20.jpg?sw=292&sh=292",
+        "price": 35,
+        "description": "You will love the H&H Women's Plus All Over Print Tier Dress featuring bell shape sleeves and a V-neckline. ",
+        "quantity": 15
+    },
+    {
+        "id": 3,
+        "name": "H&H Women's Tiered Long Sleeve Dress",
+        "img": "https://www.thewarehouse.co.nz/dw/image/v2/BDMG_PRD/on/demandware.static/-/Sites-twl-master-catalog/default/dw8c400f6b/images/hi-res/36/3A/R2792474_10.jpg?sw=765&sh=765",
+        "price": 55,
+        "description": "This stylish longsleeve dress is crafted from breathable cotton. Featuring a two-tiered element and a button-up front. ",
+        "quantity": 12
+    },
+    {
+        "id": 4,
+        "name": "H&H Women's Sleeveless Shift Dress",
+        "img": "https://www.thewarehouse.co.nz/dw/image/v2/BDMG_PRD/on/demandware.static/-/Sites-twl-master-catalog/default/dwb42846ea/images/hi-res/F3/F1/R2786339_10.jpg?sw=765&sh=765",
+        "price": 9.99,
+        "description": "Stay trendy in this relaxed, sleeveless shift dress. Featuring a hem taildrop and a V centre back opening for added style. ",
+        "quantity": 23
+    },
+    {
+        "id": 5,
+        "name": "H&H Women's Sleeveless Swing Midi Dress",
+        "img": "https://www.thewarehouse.co.nz/dw/image/v2/BDMG_PRD/on/demandware.static/-/Sites-twl-master-catalog/default/dw34a48770/images/hi-res/32/8D/R2776171_10.jpg?sw=765&sh=765",
+        "price": 13,
+        "description": "This sleeveless swing midi is perfect for the warmer months, featuring a V-neckline and hem taildrop. Dressing sytlish is made easier with this relaxed fit dress!",
+        "quantity": 11
+    },
+    {
+        "id": 6,
+        "name": "H&H Women's Tiered Short Sleeve Midi Dress",
+        "img": "https://www.thewarehouse.co.nz/dw/image/v2/BDMG_PRD/on/demandware.static/-/Sites-twl-master-catalog/default/dwd0876950/images/hi-res/68/A2/R2789060_10.jpg?sw=765&sh=765",
+        "price": 25,
+        "description": "This beautiful dress is a staple piece for any occasion! Crafted from 100% breathable cotton, stay stylish and comfortable in those warmer months.!",
+        "quantity": 9
+    }
+
+]
