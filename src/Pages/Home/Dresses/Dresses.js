@@ -15,7 +15,7 @@ const Dresses = () => {
         <div className="row">
            {
                     products.map(product => <Dress
-                        key={product.id}
+                        key={product._id}
                         product={product}
                     />)
                 }
