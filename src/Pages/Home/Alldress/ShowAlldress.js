@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import Dress from '../Dress/Dress';
+import ShowDress from './ShowDress';
 
-const Dresses = () => {
+const ShowAlldress = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
@@ -13,25 +11,17 @@ const Dresses = () => {
     }, [])
     return (
         <div className='container'>
-        <h2 className='text-warning  text-center mt-5'>Dresses</h2>
+        <h2 className='text-warning  text-center mt-5'>All Dresses...</h2>
         <div className="row">
            {
-                    products.slice(0, 6).map(product => <Dress
+                    products.map(product => <ShowDress
                         key={product._id}
                         product={product}
                     />)
                 }
         </div>
-        
-    <div>
-    <Nav.Link as={Link} to="alldress">
-    <button className='mt-3 px-5 border'>See All</button>
-    </Nav.Link>
-
-     </div>
     </div>
-            
     );
 };
 
-export default Dresses;
+export default ShowAlldress;

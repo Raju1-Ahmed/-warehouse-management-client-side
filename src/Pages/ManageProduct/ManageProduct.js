@@ -1,5 +1,6 @@
 import React from 'react';
 import useService from '../../hooks/useService';
+import './ManageProduct.css'
 
 const ManageProduct = () => {
     const [products, setProducts] = useService();
@@ -22,9 +23,15 @@ const ManageProduct = () => {
         <div className='w-50 mx-auto'>
         <h2>Manage your services</h2>
         {
-            products.map(product => <div key={product._id}>
-                <h5>{product.name} <button onClick={() => handleDelete(product._id)}>X</button></h5>
-                
+            products.map(product => <div
+             key={product._id}>
+                 
+                 <div className='d-flex '> 
+                 <img className='mt-2' width={100} height={100} src={product.img} alt="" /> 
+                <h5 className='manageh2'>{product.name} <button className='mx-2 w-25 border btnBG' onClick={() => handleDelete(product._id)}>
+                    <a>x</a>
+                    </button></h5>
+                </div>
             </div>)
         }
     </div>

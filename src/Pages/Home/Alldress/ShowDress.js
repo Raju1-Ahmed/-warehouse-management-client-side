@@ -1,15 +1,8 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import './Dress.css'
 
-const Dress = ({product}) => {
-    const { _id,name, img, price, quantity, description} = product;
+const ShowDress = ({product}) => {
+    const { name, img, price, quantity, description} = product;
 
-    const navigate = useNavigate()
-
-    const handleOrder= id =>{
-        navigate(`/service/${id}`);
-    }
     return (
         <div className=' g-5 d-flex col-sm-12 col-md-6 col-lg-4'>
         <div className="card b bdr "  style={ { width: "18rem" }}>
@@ -19,12 +12,10 @@ const Dress = ({product}) => {
                 <h5 className="nmstyle">Price: {price}$</h5>
                 <h1 className="nmstyle">quantity: {quantity}</h1>
                 <p className="nmstyle"><span>{description.substr(0, 90)}</span></p>
-                <button className='nmstyle border' onClick={()=> handleOrder(_id)}>Order</button>
             </div>
         </div>
     </div>
-    
     );
 };
 
-export default Dress;
+export default ShowDress;

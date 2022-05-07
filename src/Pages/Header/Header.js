@@ -19,13 +19,13 @@ const Header = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto bg">
+          <Nav className="me-auto bg">            
           </Nav>
           <Nav>
             {
               user && <>
                 <Nav.Link as={Link} to="addservice">Add</Nav.Link>
-                
+                <Nav.Link as={Link} to="manage">Manage</Nav.Link> 
                 <Nav.Link as={Link} to="order">Orders</Nav.Link>
               </>
             }
