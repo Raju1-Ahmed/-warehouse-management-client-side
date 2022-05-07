@@ -16,7 +16,7 @@ const SingleDress = () => {
                 <h5 className="nmstyle">Price: {service.price}$</h5>
                 {/* <h5  className="card-title">Quantity: {service.quantity}</h5> */}
                 <button className='nmstyle border p-2'>inc-: <span className='border'>{service.quantity}</span> :+dec</button>
-                 <p className="nmstyle">{service.description}</p>
+                 <p className="nmstyle">This is Service: {service.description}</p>
             </div>
         </div>
     </div>
