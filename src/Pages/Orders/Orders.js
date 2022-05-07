@@ -6,20 +6,21 @@ import auth from '../../firebase.init';
 const Orders = () => {
     const [user] = useAuthState(auth);
     const [orders, setOrders] = useState([]);
-    useEffect(()=>{
+    useEffect(() => {
 
-        const getOrders = async() =>{
-            const url = `http://localhost:5000/order`
-        const {data}  = await axios.get(url)
-        setOrders(data)
-    }
-    getOrders()
-    },[user])
-return (
-    <div>
-        <h2>This is orders Area.....{orders.length}</h2>
-    </div>
-);
+        const getOrders = async () => {
+            const email = user.email;
+            const url = `http://localhost:5000/order?email=${email}`;
+            const { data } = await axios.get(url)
+            setOrders(data)
+        }
+        getOrders()
+    }, [user])
+    return (
+        <div>
+            <h2>This is orders Area.....: {orders.length}</h2>
+        </div>
+    );
 };
 
 export default Orders;
