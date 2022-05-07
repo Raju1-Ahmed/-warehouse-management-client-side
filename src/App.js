@@ -10,6 +10,7 @@ import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import AddService from './Pages/AddService/AddService';
 import ManageProduct from './Pages/ManageProduct/ManageProduct';
 import SingleDress from './Pages/SingleDress/SingleDress';
+import Orders from './Pages/Orders/Orders';
 
 function App() {
   return (
@@ -23,6 +24,12 @@ function App() {
       <Route  path='/service/:productId'element={
         <RequireAuth>
           <SingleDress></SingleDress>
+        </RequireAuth>
+      }></Route>
+
+      <Route path="/order" element={
+        <RequireAuth>
+          <Orders></Orders>
         </RequireAuth>
       }></Route>
 

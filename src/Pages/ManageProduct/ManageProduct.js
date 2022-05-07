@@ -1,8 +1,8 @@
 import React from 'react';
-import useProducts from '../../hooks/useProducts';
+import useService from '../../hooks/useService';
 
 const ManageProduct = () => {
-    const [products, setProducts] = useProducts();
+    const [products, setProducts] = useService();
     const handleDelete = id =>{
         const proceed = window.confirm('Are you sure?');
         if(proceed){
