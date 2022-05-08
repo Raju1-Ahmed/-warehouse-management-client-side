@@ -50,7 +50,7 @@ const OrderDetails = () => {
             <br />
             <input className='w-100 mb-2' type="text" name="phone" placeholder='phone' required />
             <br />
-            <input className='btn btn-primary' type="submit" value="Place Order" />
+            <input className='btn btn-primary' type="submit" value="" />
         </form>
     </div>
     );

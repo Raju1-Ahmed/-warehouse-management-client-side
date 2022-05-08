@@ -21,7 +21,7 @@ const Orders = () => {
         getOrders()
     }, [user])
     return (
-    <div className='w-50 mx-auto'>
+    <div className=' col-sm-w-50 '>
     <h2>My orders: {orders.length}</h2>
     {
         orders.map(order => <div

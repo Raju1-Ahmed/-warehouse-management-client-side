@@ -20,15 +20,15 @@ const ManageProduct = () => {
         }
     }
     return (
-        <div className='w-50 mx-auto'>
+       <div className='col-sm-w-50 '>
         <h2>Manage your services</h2>
         {
             products.map(product => <div
              key={product._id}>
                  
                  <div className='d-flex '> 
-                 <img className='mt-2' width={100} height={100} src={product.img} alt="" /> 
-                <h5 className='manageh2'> name: {product.name} <button className='mx-2 w-25 border btnBG' onClick={() => handleDelete(product._id)}>
+                 <img className=' mt-2 ' width={100} height={100} src={product.img} alt="" /> 
+                <h5 className='manageh2'> name: {product.name} <button className='mx-2 w-25  border btnBG' onClick={() => handleDelete(product._id)}>
                     <a>x</a>
                     </button></h5>
                 </div>

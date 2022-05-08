@@ -22,10 +22,11 @@ const SingleDress = () => {
                 <h5 className="nmstyle">Price: {service.price}$</h5>
                 {/* <h5  className="card-title">Quantity: {service.quantity}</h5> */}
 
-                <button onClick={() =>handleDecrement()} className='nmstyle border p-2'>inc-:</button>
-                <span className='border'>{service.quantity}</span>
-                <button className='nmstyle border p-2'>:+dec</button>
+                <button onClick={() =>handleDecrement()} className='nmstyle border '>inc-:</button>
+                <span className='border p-2'>{service.quantity}</span>
+                <button className='nmstyle border '>:+dec</button>
 
+                <button className='nmstyle mt-2 d-flex mx-auto  border '>Delivery</button>
                  <p className="nmstyle">This is Service: {service.description}</p>
             </div>
         </div>
