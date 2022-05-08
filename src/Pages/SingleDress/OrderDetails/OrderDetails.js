@@ -16,6 +16,7 @@ const OrderDetails = () => {
         event.preventDefault();
         const order = {
             email:user.email,
+            img: service.img,
             service: service.name,
             quantity: service.quantity,
             serviceId: serviceId,
@@ -38,6 +39,8 @@ const OrderDetails = () => {
             <input className='w-100 mb-2' type="text" value={user?.displayName} name="name" placeholder='name' required readOnly disabled/>
             <br />
             <input className='w-100 mb-2' type="email" value={user?.email} name="email" placeholder='email' required readOnly disabled />
+            <br />
+            <input className='w-100 mb-2' placeholder='Photo URL' type="text" value={service.img} required readOnly disabled />
             <br />
             <input className='w-100 mb-2' type="text" value={service.name} name="service" placeholder='service' required readOnly />
             <br />
