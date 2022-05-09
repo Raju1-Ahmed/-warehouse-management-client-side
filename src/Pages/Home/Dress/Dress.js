@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Dress.css'
+// import './Dress.css'
 
 const Dress = ({product}) => {
     const { _id,name, img, price,supplier, quantity, description} = product;

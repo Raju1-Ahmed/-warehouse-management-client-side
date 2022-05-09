@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
-import './Banner.css'
 
 import banner1 from '../../../image/Banner/images.jpg'
 import banner2 from '../../../image/Banner/images1.jpg'

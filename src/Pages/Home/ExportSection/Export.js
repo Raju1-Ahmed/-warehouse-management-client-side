@@ -1,6 +1,6 @@
 import React from 'react';
 import werehousebg from '../../../image/Banner/Warehous.jpg'
-import './Expar.css'
+
 
 const Export = () => {
     return (

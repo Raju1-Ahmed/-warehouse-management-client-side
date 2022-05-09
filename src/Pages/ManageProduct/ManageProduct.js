@@ -1,6 +1,6 @@
 import React from 'react';
 import useService from '../../hooks/useService';
-import './ManageProduct.css'
+// import './ManageProduct.css'
 
 const ManageProduct = () => {
     const [products, setProducts] = useService();
