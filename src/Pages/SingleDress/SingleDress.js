@@ -26,7 +26,7 @@ const SingleDress = () => {
                 <span className='border p-2'>{service.quantity}</span>
                 <button className='nmstyle border '>:+dec</button>
 
-                <button className='nmstyle mt-2 d-flex mx-auto  border '>Delivery</button>
+                <button className='nmstyle mt-2 d-flex mx-auto  border '>Update</button>
                  <p className="nmstyle">This is Service: {service.description}</p>
             </div>
         </div>
