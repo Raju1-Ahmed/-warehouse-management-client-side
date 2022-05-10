@@ -21,7 +21,7 @@ const ManageProduct = () => {
     }
     return (
         <div className='col-sm-w-50 '>
-            <h2>Manage your services</h2>
+            <h2 className='d-inline mt-5 mx-auto clr'>Manage your services</h2>
             {
                 products.map(product => <div
                     key={product._id}>

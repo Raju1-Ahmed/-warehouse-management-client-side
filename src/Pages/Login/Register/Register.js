@@ -50,13 +50,13 @@ const Register = () => {
 
                 <input type="password" name="password" id="" placeholder='Password' required />
                 <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
-                <label className={`ps-2 ${agree ? '' : 'text-danger'}`} htmlFor="terms">Accept ClothingWarehouse Terms and Conditions</label>
+                <label className={`ps-2 ${agree ? '' : 'clr'}`} htmlFor="terms">Accept ClothingWarehouse Terms and Conditions</label>
                 <input
-                    disabled={!agree} className='w-50 mx-auto btn btn-primary mt-2'
+                    disabled={!agree} className='w-50 warning px-5 py-2 mx-auto  mt-2'
                     type="submit"
                     value="Register" />
             </form>
-            <p>Already have an account? <Link to="/login" className='text-primary pe-auto text-decoration-none' >Please Login</Link> </p>
+            <p>Already have an account? <Link to="/login" className='clr pe-auto text-decoration-none' >Please Login</Link> </p>
             <SocialLogin></SocialLogin>
         </div>
     );

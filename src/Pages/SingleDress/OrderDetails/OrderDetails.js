@@ -34,7 +34,7 @@ const OrderDetails = () => {
     }
     return (
         <div className='w-50 mx-auto'>
-            <h2>Please Order: {service.name}</h2>
+            <h2 className='d-inline mt-5 mx-auto clr'>Please Order: {service.name}</h2>
             <form onSubmit={handlePlaceOrder}>
                 <input className='w-100 mb-2' type="text" value={user?.displayName} name="name" placeholder='name' required readOnly disabled />
                 <br />

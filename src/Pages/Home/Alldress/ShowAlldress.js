@@ -3,7 +3,7 @@ import ShowDress from './ShowDress';
 
 const ShowAlldress = () => {
     const [products, setProducts] = useState([]);
-
+    // console.log(products);
     useEffect(() => {
         fetch('https://still-journey-93774.herokuapp.com/service')
             .then(res => res.json())
@@ -11,16 +11,16 @@ const ShowAlldress = () => {
     }, [])
     return (
         <div className='container'>
-        <h2 className='text-warning  text-center mt-5'>All Dresses...</h2>
-        <div className="row">
-           {
+            <h2 className='text-warning  text-center mt-5'>All Dresses...</h2>
+            <div className="row">
+                {
                     products.map(product => <ShowDress
                         key={product._id}
                         product={product}
                     />)
                 }
+            </div>
         </div>
-    </div>
     );
 };
 

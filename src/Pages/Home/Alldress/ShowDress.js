@@ -22,7 +22,7 @@ const ShowDress = ({ product }) => {
                     <h1 className="nmstyle">quantity: {quantity}</h1>
                     <h1 className="nmstyle">supplier: {supplier}</h1>
                     <p className="nmstyle"><span>{description.substr(0, 90)}</span></p>
-                    <Button className='danger' onClick={() => handleOrder(_id)}>Order</Button>
+                    <button className=' px-5 py-2 nmstyle border' onClick={() => handleOrder(_id)}>Order</button>
                 </div>
             </div>
         </div>
