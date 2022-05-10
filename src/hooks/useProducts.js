@@ -6,7 +6,7 @@ const useProducts = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        const url = `http://localhost:5000/service/${productId}`;
+        const url = `https://still-journey-93774.herokuapp.com/service/${productId}`;
         fetch(url)
         .then(res => res.json())
         .then(data => setProducts(data));

@@ -5,7 +5,7 @@ const AddService = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/service`;
+        const url = `https://still-journey-93774.herokuapp.com/service`;
         fetch(url, {
             method: 'POST',
             headers: {
@@ -30,7 +30,7 @@ const AddService = () => {
                 <input className='mb-2' placeholder='Price' type="number" {...register("price")} />
                 <input className='mb-2' placeholder='quantity' type="number" {...register("quantity")} />
                 <input className='mb-2' placeholder='Photo URL' type="text" {...register("img")} />
-                <input type="submit" value="Add Service" />
+                <input className='px-5 py-2  nmstyle' type="submit" value="Add Service" />
             </form>
         </div>
     );

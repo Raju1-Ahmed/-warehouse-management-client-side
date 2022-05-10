@@ -5,7 +5,7 @@ const ShowAlldress = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/service')
+        fetch('https://still-journey-93774.herokuapp.com/service')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [])

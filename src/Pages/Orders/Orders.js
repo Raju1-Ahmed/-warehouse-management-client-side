@@ -10,7 +10,7 @@ const Orders = () => {
 
         const getOrders = async () => {
             const email = user.email;
-            const url = `http://localhost:5000/order?email=${email}`;
+            const url = `https://still-journey-93774.herokuapp.com/order?email=${email}`;
             const { data } = await axios.get(url,{
                 headers: {
                     authorization: `Bearer ${localStorage.getItem('accessToken')}`

@@ -23,7 +23,7 @@ const OrderDetails = () => {
             address: event.target.address.value,
             phone: event.target.phone.value
         }
-        axios.post('http://localhost:5000/order', order)
+        axios.post('https://still-journey-93774.herokuapp.com/order', order)
         .then(response =>{
             const {data} = response;
             if(data.insertedId){
@@ -50,7 +50,7 @@ const OrderDetails = () => {
             <br />
             <input className='w-100 mb-2' type="text" name="phone" placeholder='phone' required />
             <br />
-            <input className='btn btn-primary' type="submit" value="Delivery" />
+            <input className='px-5 py-2 nmstyle ' type="submit" value="Delivery" />
         </form>
     </div>
     );

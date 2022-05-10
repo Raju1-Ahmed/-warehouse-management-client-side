@@ -1,3 +1,4 @@
+import { Button } from 'bootstrap';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -21,7 +22,7 @@ const ShowDress = ({product}) => {
                 <h1 className="nmstyle">quantity: {quantity}</h1>
                 <h1 className="nmstyle">supplier: {supplier}</h1>
                 <p className="nmstyle"><span>{description.substr(0, 90)}</span></p>
-                <button className='nmstyle border' onClick={()=> handleOrder(_id)}>Order</button>
+                <Button className='danger' onClick={()=> handleOrder(_id)}>Order</Button>
             </div>
         </div>
     </div>

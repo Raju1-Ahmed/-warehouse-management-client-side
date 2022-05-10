@@ -7,7 +7,7 @@ const Dresses = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/service')
+        fetch('https://still-journey-93774.herokuapp.com/service')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [])
@@ -25,7 +25,7 @@ const Dresses = () => {
         
     <div>
     <Nav.Link as={Link} to="alldress">
-    <button className='mt-3 px-5 border'>See All</button>
+    <button className='px-5 py-2 nmstyle border'>See All</button>
     </Nav.Link>
 
      </div>

@@ -46,7 +46,7 @@ const Login = () => {
         const password = passwordRef.current.value;
 
       await  signInWithEmailAndPassword(email, password);
-      const {data} = await axios.post('http://localhost:5000/login', {email});
+      const {data} = await axios.post('https://still-journey-93774.herokuapp.com/login', {email});
       localStorage.setItem('accessToken', data.accessToken);
       navigate(from, { replace: true });
     }
@@ -61,26 +61,28 @@ const Login = () => {
         }
     }
     return (
-        <div className='row'>
-        <div className='w-25 bg-danger mt-5 rounded d-block mx-auto'>
-        <h2 className='text-primary text-center mt-2'>Please Login</h2>
+        <div className='container'>
+        <div className='row  d-flex justify-content-center'>
+        <div className='col-md-4 mt-5 rounded'>
+        <h2 className='clr text-center mt-2'>Please Login</h2>
             <Form onSubmit={handleSubmit}>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Group className="mb-3 clr" controlId="formBasicEmail">
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" />
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Group className="mb-3 clr" controlId="formBasicPassword">
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" />
                 </Form.Group>
-                <Button variant="primary w-50 mx-auto d-block mb-2" type="submit">
+                <Button  variant="warning px-5 py-2  w-50 mx-auto d-block mb-2" type="submit">
                 Login
             </Button>
             </Form>
             {errorElement}
-            <p>New to ClothingWarehouse?  <Link to="/register" className='text-primary pe-auto text-decoration-none'>Please Register</Link> </p>
-            <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
+            <p>New to ClothingWarehouse?  <Link to="/register" className='clr pe-auto text-decoration-none'>Please Register</Link> </p>
+            <p>Forget Password? <button className='btn btn-link clr pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
             <ToastContainer/>
         </div>
+    </div>
     </div>
     );
 };
