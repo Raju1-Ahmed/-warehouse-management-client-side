@@ -13,13 +13,13 @@ const AddService = () => {
             },
             body: JSON.stringify(data)
         })
-        .then(res=> res.json())
-        .then(result =>{
-            console.log(result);
-        } )
+            .then(res => res.json())
+            .then(result => {
+                console.log(result);
+            })
     };
-    
- 
+
+
     return (
         <div className='w-50 mx-auto'>
             <h2>Please add a service</h2>

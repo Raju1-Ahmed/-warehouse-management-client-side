@@ -12,6 +12,7 @@ import ManageProduct from './Pages/ManageProduct/ManageProduct';
 import SingleDress from './Pages/SingleDress/SingleDress';
 import Orders from './Pages/Orders/Orders';
 import ShowAlldress from './Pages/Home/Alldress/ShowAlldress';
+import Blog from './Pages/Shared/Blog/Blog';
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
           <ManageProduct></ManageProduct>
         </RequireAuth>
       }></Route>
+      <Route path="/blog" element={<Blog/>}></Route>
       <Route path="/login" element={<Login />}></Route>
       <Route path="/register" element={<Register />}></Route>
       </Routes>

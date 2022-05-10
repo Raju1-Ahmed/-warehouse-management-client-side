@@ -12,20 +12,21 @@ const Header = () => {
     signOut(auth);
   }
   return (
-    <Navbar className="bg bdr" collapseOnSelect expand="lg" sticky='top'   variant="dark">
+    <Navbar className="bg bdr" collapseOnSelect expand="lg" sticky='top' variant="dark">
       <Container>
-      <Navbar.Brand as={Link} to="/"><img height={50} src={navlogo} alt="" />
+        <Navbar.Brand as={Link} to="/"><img height={50} src={navlogo} alt="" />
         </Navbar.Brand>
         <Nav.Link as={Link} to="/">ClothingWarehouse</Nav.Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto bg">            
+          <Nav className="me-auto bg">
           </Nav>
           <Nav>
+            <Nav.Link as={Link} to="blog">Add</Nav.Link>
             {
               user && <>
                 <Nav.Link as={Link} to="addservice">Add</Nav.Link>
-                <Nav.Link as={Link} to="manage">Manage</Nav.Link> 
+                <Nav.Link as={Link} to="manage">Manage</Nav.Link>
                 <Nav.Link as={Link} to="order">Orders</Nav.Link>
               </>
             }

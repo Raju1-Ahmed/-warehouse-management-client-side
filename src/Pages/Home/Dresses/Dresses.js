@@ -13,24 +13,23 @@ const Dresses = () => {
     }, [])
     return (
         <div className='container'>
-        <h2 className='text-warning  text-center mt-5'>Dresses</h2>
-        <div className="row">
-           {
+            <h2 className='text-warning  text-center mt-5'>Dresses</h2>
+            <div className="row">
+                {
                     products.slice(0, 6).map(product => <Dress
                         key={product._id}
                         product={product}
                     />)
                 }
-        </div>
-        
-    <div>
-    <Nav.Link as={Link} to="alldress">
-    <button className='px-5 py-2 nmstyle border'>See All</button>
-    </Nav.Link>
+            </div>
+            <div>
+                <Nav.Link as={Link} to="alldress">
+                    <button className='px-5 py-2 nmstyle border'>See All</button>
+                </Nav.Link>
 
-     </div>
-    </div>
-            
+            </div>
+        </div>
+
     );
 };
 
