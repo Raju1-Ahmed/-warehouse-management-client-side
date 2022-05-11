@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import axios from 'axios';
 
 const Orders = () => {
     const [user] = useAuthState(auth);
@@ -18,9 +18,10 @@ const Orders = () => {
             }
             );
             setOrders(data)
-        }
-        getOrders()
+        };
+        getOrders();
     }, [user])
+
     return (
         <div className=' col-sm-w-50 '>
             <h2>My orders: {orders.length}</h2>

@@ -14,7 +14,7 @@ const Dresses = () => {
     return (
         <div className='container'>
             <h2 className='text-warning  text-center mt-5'>Dresses</h2>
-            <div className="row">
+            <div className="row  d-flex justify-content-center">
                 {
                     products.slice(0, 6).map(product => <Dress
                         key={product._id}
