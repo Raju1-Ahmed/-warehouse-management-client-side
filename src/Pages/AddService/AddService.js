@@ -21,7 +21,9 @@ const AddService = () => {
 
 
     return (
-        <div className='w-50 mx-auto'>
+        <div className='copntainer'>
+            <div className='row  d-flex justify-content-center'>
+            <div className='col-md-4 col-lg-8 mt-5'>
             <h2 className='d-inline mt-5 mx-auto clr'>Please add a service</h2>
             <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
                 <input className='mb-2' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
@@ -32,6 +34,8 @@ const AddService = () => {
                 <input className='mb-2' placeholder='Photo URL' type="text" {...register("img")} />
                 <input className='px-5 py-2  nmstyle' type="submit" value="Add Service" />
             </form>
+        </div>
+            </div>
         </div>
     );
 };

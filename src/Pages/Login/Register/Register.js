@@ -41,10 +41,13 @@ const Register = () => {
     }
 
     return (
-        <div className='register-form'>
-            <h2 style={{ textAlign: 'center' }}>Please Register</h2>
+     <div className='container'>
+         <div className='row d-flex justify-content-center'>
+         <div className='col-md-12 col-sm-12 col-lg-12 mt-5 '>
+            <div className='register-form'>
+            <h2 className='clr text-center mt-2'>Please Register</h2>
             <form onSubmit={handleRegister} >
-                <input type="text" name="name" id="" placeholder='Your Name' />
+                <input c type="text" name="name" id="" placeholder='Your Name' />
 
                 <input type="email" name="email" id="" placeholder='Email Address' required />
 
@@ -52,13 +55,16 @@ const Register = () => {
                 <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
                 <label className={`ps-2 ${agree ? '' : 'clr'}`} htmlFor="terms">Accept ClothingWarehouse Terms and Conditions</label>
                 <input
-                    disabled={!agree} className='w-50 warning px-5 py-2 mx-auto  mt-2'
+                    disabled={!agree} className='btn btn-warning my-3'
                     type="submit"
                     value="Register" />
             </form>
             <p>Already have an account? <Link to="/login" className='clr pe-auto text-decoration-none' >Please Login</Link> </p>
             <SocialLogin></SocialLogin>
+            </div>
         </div>
+         </div>
+     </div>
     );
 };
 

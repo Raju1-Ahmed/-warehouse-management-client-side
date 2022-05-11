@@ -33,7 +33,9 @@ const OrderDetails = () => {
             })
     }
     return (
-        <div className='w-50 mx-auto'>
+        <div className='container'>
+            <div className='row  d-flex justify-content-center'>
+            <div className='col-md-4 mt-3'>
             <h2 className='d-inline mt-5 mx-auto clr'>Please Order: {service.name}</h2>
             <form onSubmit={handlePlaceOrder}>
                 <input className='w-100 mb-2' type="text" value={user?.displayName} name="name" placeholder='name' required readOnly disabled />
@@ -52,6 +54,8 @@ const OrderDetails = () => {
                 <br />
                 <input className='px-5 py-2 nmstyle ' type="submit" value="Delivery" />
             </form>
+        </div>
+            </div>
         </div>
     );
 };
